@@ -14,7 +14,7 @@
         var encoder = new dfd.OneHotEncoder();
         category = encoder.fit(data['품종']);
         data['품종'].print();
-        catagory.print();
+        category.print();
         
         var X = tf.input({ shape: [4]});
         var H = tf.layers.dense({ units: 4, activation:'relu'}).apply(X);
